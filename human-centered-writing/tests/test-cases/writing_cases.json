@@ -1,0 +1,240 @@
+[
+  {
+    "id": "casual-en",
+    "context": "casual conversation",
+    "operation": "humanize",
+    "input": "I wanted to reach out and say I may be late.",
+    "expectation": "generic opening"
+  },
+  {
+    "id": "email-en",
+    "context": "professional email",
+    "operation": "generate",
+    "input": "Ask for feedback on a proposal sent last week.",
+    "expectation": "purpose early"
+  },
+  {
+    "id": "email-de",
+    "context": "professional German email",
+    "operation": "humanize",
+    "input": "Ich möchte Ihnen mitteilen, dass ich mich wegen des Termins melde.",
+    "expectation": "preserve Sie"
+  },
+  {
+    "id": "german-b1",
+    "context": "German B1 communication",
+    "operation": "humanize",
+    "input": "Ich habe gestern den Bus verpasst und komme später.",
+    "expectation": "do not overcorrect learner voice"
+  },
+  {
+    "id": "job-application",
+    "context": "job application",
+    "operation": "generate",
+    "input": "Draft a note using only supplied qualifications.",
+    "expectation": "no invented achievements"
+  },
+  {
+    "id": "academic",
+    "context": "academic explanation",
+    "operation": "humanize",
+    "input": "This study shows that sleep matters.",
+    "expectation": "preserve citations when supplied"
+  },
+  {
+    "id": "scientific",
+    "context": "scientific paragraph",
+    "operation": "humanize",
+    "input": "The p-value was 0.03 (Smith, 2024).",
+    "expectation": "preserve numbers and citation"
+  },
+  {
+    "id": "software-docs",
+    "context": "software documentation",
+    "operation": "humanize",
+    "input": "Run `npm test` after editing config.yaml.",
+    "expectation": "preserve code and path"
+  },
+  {
+    "id": "programming",
+    "context": "programming explanation",
+    "operation": "generate",
+    "input": "Explain a null check to a junior developer.",
+    "expectation": "clear technical language"
+  },
+  {
+    "id": "marketing",
+    "context": "marketing advertisement",
+    "operation": "humanize",
+    "input": "Our revolutionary solution unlocks seamless growth.",
+    "expectation": "remove unsupported hype"
+  },
+  {
+    "id": "social",
+    "context": "social media caption",
+    "operation": "generate",
+    "input": "Caption for a photo of a local market.",
+    "expectation": "no automatic hashtags"
+  },
+  {
+    "id": "generic-intro",
+    "context": "generic AI-style introduction",
+    "operation": "humanize",
+    "input": "In today's fast-paced world, planning is crucial.",
+    "expectation": "remove empty framing"
+  },
+  {
+    "id": "em-dashes",
+    "context": "punctuation",
+    "operation": "humanize",
+    "input": "The service — which is new — starts Monday.",
+    "expectation": "preserve if grammar needs it"
+  },
+  {
+    "id": "bold",
+    "context": "formatting",
+    "operation": "humanize",
+    "input": "**Important:** submit the form by Friday.",
+    "expectation": "preserve useful emphasis"
+  },
+  {
+    "id": "headings",
+    "context": "markdown",
+    "operation": "humanize",
+    "input": "# Summary\n## Key points\n### Conclusion",
+    "expectation": "avoid needless heading inflation"
+  },
+  {
+    "id": "bullets",
+    "context": "formatting",
+    "operation": "humanize",
+    "input": "- First item\n- Second item\n- Third item",
+    "expectation": "keep list if comparison needs it"
+  },
+  {
+    "id": "vocabulary",
+    "context": "vocabulary",
+    "operation": "humanize",
+    "input": "Moreover, we leverage a robust framework.",
+    "expectation": "context-dependent terminology"
+  },
+  {
+    "id": "rhetorical",
+    "context": "syntax",
+    "operation": "humanize",
+    "input": "What matters? What changes? What comes next?",
+    "expectation": "reduce only if excessive"
+  },
+  {
+    "id": "three-part",
+    "context": "structure",
+    "operation": "humanize",
+    "input": "We plan, execute, and review.",
+    "expectation": "preserve meaningful parallelism"
+  },
+  {
+    "id": "transitions",
+    "context": "transitions",
+    "operation": "humanize",
+    "input": "Furthermore, the date is Friday. Additionally, bring ID.",
+    "expectation": "remove needless transitions"
+  },
+  {
+    "id": "enthusiasm",
+    "context": "tone",
+    "operation": "humanize",
+    "input": "Great question! I'd be happy to help!",
+    "expectation": "remove forced enthusiasm"
+  },
+  {
+    "id": "semantic-repeat",
+    "context": "repetition",
+    "operation": "humanize",
+    "input": "The deadline is close. We do not have much time before the deadline.",
+    "expectation": "retain distinctions"
+  },
+  {
+    "id": "hedging",
+    "context": "uncertainty",
+    "operation": "humanize",
+    "input": "It may possibly perhaps be delayed.",
+    "expectation": "preserve evidence-based uncertainty"
+  },
+  {
+    "id": "long",
+    "context": "conciseness",
+    "operation": "humanize",
+    "input": "The meeting, which was arranged for the purpose of discussing the issue, was held yesterday.",
+    "expectation": "shorten without lost meaning"
+  },
+  {
+    "id": "natural",
+    "context": "no-change",
+    "operation": "humanize",
+    "input": "The report is due Friday. Please send the final PDF to Ana.",
+    "expectation": "unchanged if suitable"
+  },
+  {
+    "id": "technical",
+    "context": "technical terminology",
+    "operation": "humanize",
+    "input": "Use robust regression for the sensitivity analysis.",
+    "expectation": "preserve technical term"
+  },
+  {
+    "id": "numbers",
+    "context": "financial data",
+    "operation": "humanize",
+    "input": "Revenue was €1,250.50 on 12 October 2026.",
+    "expectation": "preserve exact values"
+  },
+  {
+    "id": "citations",
+    "context": "citations and quotations",
+    "operation": "humanize",
+    "input": "“No data were lost” (Lee, 2025, p. 4).",
+    "expectation": "preserve quote and citation"
+  },
+  {
+    "id": "formal",
+    "context": "formal style",
+    "operation": "humanize",
+    "input": "Pursuant to Section 4, the notice period is 30 days.",
+    "expectation": "retain intentional formality"
+  },
+  {
+    "id": "strict-format",
+    "context": "strict formatting",
+    "operation": "humanize",
+    "input": "| Item | Value |\n|---|---|\n| A | 1 |",
+    "expectation": "preserve Markdown table"
+  },
+  {
+    "id": "multilingual",
+    "context": "multilingual",
+    "operation": "humanize",
+    "input": "Hola, ich komme später.",
+    "expectation": "do not translate without request"
+  },
+  {
+    "id": "short-input",
+    "context": "short input",
+    "operation": "humanize",
+    "input": "Thanks.",
+    "expectation": "avoid unnecessary rewrite"
+  },
+  {
+    "id": "contradictory",
+    "context": "conflicting preferences",
+    "operation": "generate",
+    "input": "Write a one-word detailed formal casual report.",
+    "expectation": "ask concise clarification"
+  },
+  {
+    "id": "unusual-voice",
+    "context": "voice preservation",
+    "operation": "humanize",
+    "input": "Nah, that bit doesn't sit right with me.",
+    "expectation": "preserve valid voice"
+  }
+]

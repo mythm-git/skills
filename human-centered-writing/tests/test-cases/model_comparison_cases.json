@@ -1,0 +1,194 @@
+[
+  {
+    "id": "casual-late",
+    "mode": "humanize",
+    "context": "casual conversation",
+    "request": "Make this sound natural without changing the message: I wanted to reach out and say I may be late.",
+    "protected": ["late"],
+    "checks": ["no invented reason"]
+  },
+  {
+    "id": "professional-follow-up",
+    "mode": "generate",
+    "context": "professional email",
+    "request": "Write a concise email asking Priya for feedback on the proposal sent last Tuesday. Do not imply that she has read it.",
+    "protected": ["Priya", "last Tuesday"],
+    "checks": ["purpose in first sentence", "no invented review"]
+  },
+  {
+    "id": "german-sie",
+    "mode": "humanize",
+    "context": "formal German email",
+    "request": "Revise conservatively and keep the Sie register: Ich möchte Ihnen mitteilen, dass ich mich wegen des Termins melde.",
+    "protected": ["Ihnen"],
+    "checks": ["consistent Sie register"]
+  },
+  {
+    "id": "learner-german",
+    "mode": "humanize",
+    "context": "German B1 message",
+    "request": "Make only necessary clarity edits; keep the writer's B1-level voice: Ich habe gestern den Bus verpasst und komme später.",
+    "protected": ["gestern", "später"],
+    "checks": ["no unnecessary sophistication"]
+  },
+  {
+    "id": "application-sparse",
+    "mode": "generate",
+    "context": "job application",
+    "request": "Draft a short application note for a junior analyst role using only these facts: I completed a statistics course and built one spreadsheet dashboard. Do not add achievements, passion, or years of experience.",
+    "protected": ["statistics course", "spreadsheet dashboard"],
+    "checks": ["no invented qualifications"]
+  },
+  {
+    "id": "academic-qualification",
+    "mode": "humanize",
+    "context": "academic paragraph",
+    "request": "Improve clarity while preserving the claim strength and citation: The results suggest that sleep duration may affect recall (Smith, 2024).",
+    "protected": ["may", "(Smith, 2024)"],
+    "checks": ["no stronger causal claim"]
+  },
+  {
+    "id": "scientific-statistic",
+    "mode": "humanize",
+    "context": "scientific paragraph",
+    "request": "Polish only if useful; preserve all figures and the citation: The p-value was 0.03 (Smith, 2024).",
+    "protected": ["0.03", "(Smith, 2024)"],
+    "checks": ["exact statistic and citation"]
+  },
+  {
+    "id": "software-command",
+    "mode": "humanize",
+    "context": "software documentation",
+    "request": "Improve readability without changing commands, paths, or order: Run `npm test` after editing config.yaml.",
+    "protected": ["`npm test`", "config.yaml"],
+    "checks": ["code and path unchanged"]
+  },
+  {
+    "id": "programming-explanation",
+    "mode": "generate",
+    "context": "programming explanation for a junior developer",
+    "request": "Explain why a null check is useful in two short sentences. Use no analogy and do not overstate what it prevents.",
+    "protected": ["two short sentences"],
+    "checks": ["accurate and concise"]
+  },
+  {
+    "id": "marketing-unsupported",
+    "mode": "humanize",
+    "context": "marketing copy",
+    "request": "Rewrite this without inventing a benefit: Our revolutionary solution unlocks seamless growth.",
+    "protected": [],
+    "checks": ["no invented feature or outcome"]
+  },
+  {
+    "id": "social-market",
+    "mode": "generate",
+    "context": "social media caption",
+    "request": "Write a warm one-sentence caption for a photo of a local market. Do not add hashtags, emojis, or claims about vendors.",
+    "protected": ["one sentence"],
+    "checks": ["no hashtags or emojis"]
+  },
+  {
+    "id": "generic-framing",
+    "mode": "humanize",
+    "context": "general prose",
+    "request": "Make this direct while preserving the point: In today's fast-paced world, planning is crucial.",
+    "protected": ["planning"],
+    "checks": ["remove empty framing"]
+  },
+  {
+    "id": "punctuation-voice",
+    "mode": "humanize",
+    "context": "professional announcement",
+    "request": "Revise only if it improves clarity: The service — which is new — starts Monday.",
+    "protected": ["starts Monday"],
+    "checks": ["no mechanical punctuation replacement"]
+  },
+  {
+    "id": "markdown-callout",
+    "mode": "humanize",
+    "context": "documentation",
+    "request": "Make this concise but preserve its Markdown emphasis and deadline: **Important:** submit the form by Friday.",
+    "protected": ["**Important:**", "Friday"],
+    "checks": ["Markdown retained"]
+  },
+  {
+    "id": "parallel-structure",
+    "mode": "humanize",
+    "context": "project plan",
+    "request": "Improve this only if needed: We plan, execute, and review.",
+    "protected": ["plan", "execute", "review"],
+    "checks": ["meaningful parallelism may remain"]
+  },
+  {
+    "id": "repetition",
+    "mode": "humanize",
+    "context": "team update",
+    "request": "Tighten without changing urgency: The deadline is close. We do not have much time before the deadline.",
+    "protected": ["deadline"],
+    "checks": ["urgency retained"]
+  },
+  {
+    "id": "evidence-hedge",
+    "mode": "humanize",
+    "context": "status report",
+    "request": "Improve the sentence but retain uncertainty: It may possibly perhaps be delayed.",
+    "protected": ["may"],
+    "checks": ["uncertainty retained"]
+  },
+  {
+    "id": "financial-values",
+    "mode": "humanize",
+    "context": "financial update",
+    "request": "Make this more readable only if useful; preserve the amount and date exactly: Revenue was €1,250.50 on 12 October 2026.",
+    "protected": ["€1,250.50", "12 October 2026"],
+    "checks": ["exact values"]
+  },
+  {
+    "id": "quote-citation",
+    "mode": "humanize",
+    "context": "academic quotation",
+    "request": "Revise surrounding prose only; preserve the quotation and citation exactly: “No data were lost” (Lee, 2025, p. 4).",
+    "protected": ["“No data were lost”", "(Lee, 2025, p. 4)"],
+    "checks": ["quotation and citation unchanged"]
+  },
+  {
+    "id": "legal-formality",
+    "mode": "humanize",
+    "context": "legal notice",
+    "request": "Improve clarity only if appropriate; retain the legal meaning: Pursuant to Section 4, the notice period is 30 days.",
+    "protected": ["Section 4", "30 days"],
+    "checks": ["formality is not automatically a defect"]
+  },
+  {
+    "id": "strict-table",
+    "mode": "humanize",
+    "context": "strict Markdown table",
+    "request": "Improve only if useful; preserve this table exactly:\n| Item | Value |\n|---|---|\n| A | 1 |",
+    "protected": ["| Item | Value |", "|---|---|", "| A | 1 |"],
+    "checks": ["table exactly preserved"]
+  },
+  {
+    "id": "code-switching",
+    "mode": "humanize",
+    "context": "multilingual message",
+    "request": "Make this natural without translating or removing code-switching: Hola, ich komme später.",
+    "protected": ["Hola", "ich komme später"],
+    "checks": ["no translation"]
+  },
+  {
+    "id": "no-change",
+    "mode": "humanize",
+    "context": "short work message",
+    "request": "Revise only if a material improvement is needed: The report is due Friday. Please send the final PDF to Ana.",
+    "protected": ["Friday", "PDF", "Ana"],
+    "checks": ["unchanged permitted"]
+  },
+  {
+    "id": "conflicting-brief",
+    "mode": "generate",
+    "context": "ambiguous request",
+    "request": "Write a one-word detailed formal casual report.",
+    "protected": [],
+    "checks": ["ask one concise clarification"]
+  }
+]
