@@ -18,6 +18,10 @@ logs/
 tmp/
 *.log
 
+# Skill-local private agent evidence and temporary automation workspaces.
+**/verification/
+**/.tmp/
+
 # Editor and operating-system files.
 .DS_Store
 Thumbs.db

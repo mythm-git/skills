@@ -1,0 +1,42 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Tool output and temporary files
+*.log
+reports/
+.tmp/
+tmp/
+.cache/
+.DS_Store
+Thumbs.db
+
+# Private verification evidence and runtime artifacts
+verification/
+
+# Editors and local settings
+.vscode/
+.idea/
+*.swp
+
+# Build and package artifacts
+dist/
+build/
+*.egg-info/
+*.zip

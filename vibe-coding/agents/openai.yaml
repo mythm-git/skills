@@ -1,0 +1,4 @@
+interface:
+  display_name: Vibe Coding
+  short_description: Risk-aware software engineering workflow
+  default_prompt: Build or improve this software safely, with appropriate tests and security verification.
